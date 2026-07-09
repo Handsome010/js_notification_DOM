@@ -5,8 +5,8 @@ const pushNotification = (posTop, posRight, title, description, type) => {
   const head = document.createElement('h2');
   const content = document.createElement('p');
 
-  notif.style.position = 'fixed';
-  notif.setAttribute('style', `top: ${posTop}px; right: ${posRight}px;`);
+  notif.style.top = `${posTop}px`;
+  notif.style.right = `${posRight}px`;
 
   notif.classList.add('notification');
   notif.classList.add(type);
